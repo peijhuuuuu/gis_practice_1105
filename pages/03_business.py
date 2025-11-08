@@ -5,7 +5,7 @@ import leafmap.maplibregl as leafmap
 def create_map():
 
     m = leafmap.Map(
-        center=[-74.0095, 40.7046],
+        center=[121.55555, 25.08722],
         zoom=16,
         pitch=60,
         bearing=-17,
@@ -13,7 +13,7 @@ def create_map():
         height="750px",
         sidebar_visible=True,
     )
-    m.add_basemap("Satellite", visible=False)
+    m.add_basemap("CartoDB Positron", visible=False)
     m.add_overture_3d_buildings(template="simple")
     return m
 
