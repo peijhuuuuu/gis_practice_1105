@@ -7,5 +7,3 @@ sdk: python
 sdk_version: "3.10"
 app_file: app.py
 pinned: false
----
-# gis_practice_1105
