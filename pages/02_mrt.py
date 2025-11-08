@@ -49,4 +49,6 @@ def create_map():
 
 @solara.component
 def Page():
-    return create_map() 
+    map_obj = create_map()
+    # 直接使用 Leafmap 提供的顯示方法
+    return solara.Markdown(map_obj._repr_html_(), allow_html=True)
