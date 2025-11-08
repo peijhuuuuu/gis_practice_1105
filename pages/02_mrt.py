@@ -16,12 +16,12 @@ def create_map():
 
     # 加入 GeoJSON 圖層
     m.add_geojson(
-        "https://raw.githubusercontent.com/chenhao0506/1105Solara-webmap-app/main/routes.geojson",
+        "https://raw.githubusercontent.com/peijhuuuuu/gis_practice_1105/refs/heads/main/data/routes.geojson",
         name="Routes",
     )
 
     m.add_geojson(
-        "https://raw.githubusercontent.com/chenhao0506/1105Solara-webmap-app/main/stations.geojson",
+        "https://raw.githubusercontent.com/peijhuuuuu/gis_practice_1105/refs/heads/main/data/stations.geojson",
         name="Stations",
     )
 
