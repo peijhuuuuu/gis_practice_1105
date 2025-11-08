@@ -17,7 +17,8 @@ RUN apt-get update && apt-get install -y \
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 5. 複製您所有的 App 程式碼
-COPY . .
+RUN mkdir ./pages
+COPY /pages ./pages
 
 # 6. 告訴 HF 如何執行 (使用 7860 port)
 CMD ["solara", "run", "./pages", "--host", "0.0.0.0", "--port", "7860"]
