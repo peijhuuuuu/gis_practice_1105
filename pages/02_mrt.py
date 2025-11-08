@@ -8,7 +8,7 @@ def create_map():
         basemap="CartoDB.DarkMatter",
     )
 
-    url_routes = "https://raw.githubusercontent.com/peijhuuuuu/gis_practice_1105/main/data/routes.geojson
+    url_routes = "https://raw.githubusercontent.com/peijhuuuuu/gis_practice_1105/main/data/routes.geojson"
 "
     url_stations = "https://raw.githubusercontent.com/peijhuuuuu/gis_practice_1105/main/data/stations.geojson"
 
@@ -47,8 +47,6 @@ def create_map():
 
     return m
 
-@solara.component
-def Page():
-    map_obj = create_map()
-    # 直接使用 Leafmap 提供的顯示方法
-    return solara.Markdown(map_obj._repr_html_(), allow_html=True)
+@solara.component 
+def Page(): 
+    return create_map()
