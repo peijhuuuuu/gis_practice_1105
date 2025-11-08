@@ -9,7 +9,6 @@ def create_map():
     )
 
     url_routes = "https://raw.githubusercontent.com/peijhuuuuu/gis_practice_1105/main/data/routes.geojson"
-"
     url_stations = "https://raw.githubusercontent.com/peijhuuuuu/gis_practice_1105/main/data/stations.geojson"
 
     # 路線樣式
