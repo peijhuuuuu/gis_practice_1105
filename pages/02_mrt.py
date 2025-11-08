@@ -8,7 +8,7 @@ def create_map():
         basemap="CartoDB.DarkMatter",
     )
 
-    url_routes = "https://raw.githubusercontent.com/peijhuuuuu/gis_practice_1105/blob/main/data/routes.geojson"
+    url_routes = "https://raw.githubusercontent.com/peijhuuuuu/gis_practice_1105/refs/heads/main/data/routes.geojson"
     url_stations = "https://raw.githubusercontent.com/leoluyi/taipei_mrt/refs/heads/master/stations.geojson"
 
     # 路線樣式
