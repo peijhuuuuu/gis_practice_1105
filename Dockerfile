@@ -21,5 +21,5 @@ RUN mkdir ./pages
 COPY /pages ./pages
 
 # 6. 告訴 HF 如何執行 (使用 7860 port)
-EXPOSE 7860
+
 CMD ["solara", "run", "./pages", "--host", "0.0.0.0", "--port", "7860"]
