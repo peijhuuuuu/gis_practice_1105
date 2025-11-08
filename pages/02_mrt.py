@@ -13,7 +13,7 @@ def create_map():
         sidebar_visible=True,
     )
 
-    url_routes = os.path.join("data", "routes.geojson")
+    url_routes = "https://github.com/leoluyi/taipei_mrt/blob/master/routes.geojson"
     m.add_geojson(
         url_routes,
         layer_name="捷運路線",
